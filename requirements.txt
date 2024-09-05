@@ -1,3 +1,10 @@
+pip>=24.2
+setuptools
 pandas==1.3.3
+names==0.3.0
+matplotlib==3.9.2
+openpyxl==3.1.5
+plotly==5.24.0
 streamlit==1.26.00
-openpyxl==3.0.10
+ipykernel==6.29.5
+psycopg2-binary==2.9.9
