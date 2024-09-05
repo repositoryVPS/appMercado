@@ -1,9 +1,12 @@
 import streamlit as st
-import webbrowser
 import pandas as pd
 from datetime import datetime 
 
+from pathlib import Path
 
+
+pasta_atual = Path(__name__).parent
+local = pasta_atual / 'controle.xlsx'
 #setando a pagina
 st.set_page_config(
     layout="wide",
@@ -13,7 +16,7 @@ st.set_page_config(
 st.write('ONLINE')
 
 
-df_data = pd.read_excel("controle.xlsx", index_col=6,sheet_name="bd-centro-custo")
+df_data = pd.read_excel(local, index_col=6,sheet_name="bd-centro-custo")
 st.session_state["data"] = df_data
     
     
