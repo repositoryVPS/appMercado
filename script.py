@@ -2,13 +2,7 @@ import streamlit as st
 import webbrowser
 import pandas as pd
 from datetime import datetime 
-from babel.numbers import format_currency
 
-# Função para formatar os valores em Reais usando Babel
-def formatar_valores_em_reais(valor):
-    if isinstance(valor, (int, float)):  # Verifica se o valor é numérico
-        return format_currency(valor, 'BRL', locale='pt_BR')
-    return valor
 
 #setando a pagina
 st.set_page_config(
