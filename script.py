@@ -14,7 +14,7 @@ st.write('ONLINE')
 
 
 if "data" not in st.session_state:
-    df_data = pd.read_csv("controle.xlsx", index_col=0)
+    df_data = pd.read_excel("controle.xlsx", index_col=0)
     st.session_state["data"] = df_data
     
     
