@@ -7,4 +7,4 @@ streamlit==1.26.00
 ipykernel
 psycopg2
 webbrowser
-babel.numbers
+format_currency
